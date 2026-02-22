@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IlmCircle - FAQ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #101211 0%, #1a1a1a 100%);
+            color: #E7D4BB;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-top: 40px;
+        }
+        
+        .logo {
+            width: 60px;
+            height: 60px;
+            background: #E7D4BB;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-size: 30px;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #C9A227;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1rem;
+            color: #857861;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: #E7D4BB;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover, nav a.active {
+            background: rgba(231, 212, 187, 0.1);
+            color: #C9A227;
+        }
+        
+        .faq-category {
+            margin-bottom: 40px;
+        }
+        
+        .faq-category h2 {
+            font-size: 1.3rem;
+            color: #C9A227;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(133, 120, 97, 0.3);
+        }
+        
+        .faq-item {
+            background: rgba(41, 40, 30, 0.6);
+            border-radius: 12px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(133, 120, 97, 0.2);
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background: rgba(231, 212, 187, 0.05);
+        }
+        
+        .faq-question h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #E7D4BB;
+            flex: 1;
+            padding-right: 15px;
+        }
+        
+        .faq-icon {
+            color: #C9A227;
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 0 20px 20px;
+        }
+        
+        .faq-answer p {
+            color: #B8A88A;
+            line-height: 1.7;
+        }
+        
+        .contact-box {
+            background: rgba(201, 162, 39, 0.1);
+            border: 1px solid rgba(201, 162, 39, 0.3);
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .contact-box h3 {
+            color: #C9A227;
+            margin-bottom: 10px;
+        }
+        
+        .contact-box a {
+            color: #E7D4BB;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #857861;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(133, 120, 97, 0.2);
+            margin-top: 40px;
+        }
+        
+        footer a {
+            color: #C9A227;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.7rem;
+            }
+            
+            .container {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🌙</div>
+            <h1>Frequently Asked Questions</h1>
+            <p class="subtitle">Find answers to common questions</p>
+        </header>
+        
+        <nav>
+            <a href="/api/support/index.html">Support</a>
+            <a href="/api/support/privacy.html">Privacy Policy</a>
+            <a href="/api/support/faq.html" class="active">FAQ</a>
+        </nav>
+        
+        <div class="faq-category">
+            <h2>🕌 Prayer Times</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Why are my prayer times inaccurate?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Prayer times are calculated based on your location. Please ensure you have granted location permission to the app. You can also try changing the calculation method in Settings > Prayer Settings to match your local mosque or Islamic organization's method.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do I enable Azhan notifications?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Go to Profile > Azhan Settings. Enable notifications for each prayer time and select your preferred Azhan voice. Make sure notifications are enabled for IlmCircle in your device settings.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Which calculation methods are supported?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We support multiple calculation methods including: Muslim World League, ISNA, Egypt, Makkah (Umm al-Qura), Karachi, Tehran, and more. Choose the one that matches your local community.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="faq-category">
+            <h2>🧭 Qibla Direction</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>The Qibla direction seems wrong. What should I do?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>The Qibla feature uses your device's compass. Try calibrating your compass by moving your phone in a figure-8 pattern. Also ensure you're not near magnetic objects or electronic devices that could interfere with the compass.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="faq-category">
+            <h2>🔍 Halal Product Verification</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Why can't the scanner find my product?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Our scanner uses the Open Food Facts database, which may not have all products. If a product isn't found, you can manually enter the barcode or submit the product for review. We're constantly expanding our database.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What does "Requires Verification" mean?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>This means the product contains ingredients that could be either halal or haram depending on their source (like gelatin or E-numbers). We recommend checking with the manufacturer or looking for halal certification on the packaging.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do I use the camera to scan?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Tap the "Scan Product" button and grant camera permission when prompted. Point your camera at the barcode ensuring good lighting. The app will automatically detect and scan the barcode.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="faq-category">
+            <h2>🤖 Virtual Imam</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How accurate are the Virtual Imam's answers?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>The Virtual Imam provides AI-generated guidance based on Islamic sources. While helpful for general questions, for complex fiqh matters or personal fatwas, we always recommend consulting with a qualified local scholar.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="faq-category">
+            <h2>👤 Account & Privacy</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do I delete my account?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>To delete your account and all associated data, send an email to IlmCircle13@gmail.com with the subject "Account Deletion Request" and include your registered email address. We will process your request within 30 days.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can I use the app without creating an account?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! You can use Guest Mode to access prayer times, Qibla direction, and the Quran. However, features like prayer logging, forum posting, and scan history require an account.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Is my data secure?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. We use industry-standard encryption for data transmission and storage. Passwords are hashed and never stored in plain text. We do not sell your personal data. See our Privacy Policy for full details.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact-box">
+            <h3>Still have questions?</h3>
+            <p>Contact us at <a href="mailto:IlmCircle13@gmail.com">IlmCircle13@gmail.com</a></p>
+        </div>
+        
+        <footer>
+            <p>&copy; 2026 IlmCircle. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="/api/support/index.html">Support</a> · 
+                <a href="/api/support/privacy.html">Privacy Policy</a> · 
+                <a href="mailto:IlmCircle13@gmail.com">Contact Us</a>
+            </p>
+        </footer>
+    </div>
+    
+    <script>
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.querySelector('.faq-question').addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

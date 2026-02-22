@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IlmCircle - Support</title>
+    <meta name="description" content="IlmCircle Support - Your Islamic Companion App. Get help with prayer times, Qibla direction, Quran, and Halal Product Verification.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #101211 0%, #1a1a1a 100%);
+            color: #E7D4BB;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        header { text-align: center; margin-bottom: 60px; padding-top: 40px; }
+        .logo {
+            width: 80px; height: 80px;
+            background: #E7D4BB;
+            border-radius: 20px;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 40px;
+        }
+        h1 { font-size: 2.5rem; font-weight: 700; color: #C9A227; margin-bottom: 10px; }
+        .tagline { font-size: 1.1rem; color: #857861; }
+        nav { display: flex; justify-content: center; gap: 30px; margin-bottom: 50px; flex-wrap: wrap; }
+        nav a {
+            color: #E7D4BB; text-decoration: none; font-weight: 500;
+            padding: 10px 20px; border-radius: 8px; transition: all 0.3s ease;
+        }
+        nav a:hover, nav a.active { background: rgba(231, 212, 187, 0.1); color: #C9A227; }
+        .card {
+            background: rgba(41, 40, 30, 0.6);
+            border-radius: 16px; padding: 30px; margin-bottom: 30px;
+            border: 1px solid rgba(133, 120, 97, 0.2);
+        }
+        .card h2 { font-size: 1.5rem; color: #C9A227; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+        .card p { margin-bottom: 15px; color: #E7D4BB; }
+        .contact-box {
+            background: rgba(201, 162, 39, 0.1);
+            border: 1px solid rgba(201, 162, 39, 0.3);
+            border-radius: 12px; padding: 25px; text-align: center; margin: 30px 0;
+        }
+        .contact-box h3 { color: #C9A227; margin-bottom: 10px; }
+        .contact-box a { color: #E7D4BB; font-size: 1.2rem; font-weight: 600; text-decoration: none; }
+        .contact-box a:hover { color: #C9A227; }
+        .contact-box .response-time { font-size: 0.9rem; color: #857861; margin-top: 10px; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px; }
+        .feature-item { background: rgba(16, 18, 17, 0.5); padding: 15px; border-radius: 10px; text-align: center; }
+        .feature-item span { font-size: 24px; display: block; margin-bottom: 8px; }
+        footer {
+            text-align: center; padding: 40px 20px; color: #857861; font-size: 0.9rem;
+            border-top: 1px solid rgba(133, 120, 97, 0.2); margin-top: 60px;
+        }
+        footer a { color: #C9A227; text-decoration: none; }
+        ul { list-style: none; padding-left: 0; }
+        ul li { padding: 8px 0; padding-left: 25px; position: relative; }
+        ul li:before { content: "✓"; position: absolute; left: 0; color: #C9A227; }
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .container { padding: 20px 15px; }
+            nav { gap: 10px; }
+            nav a { padding: 8px 15px; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🌙</div>
+            <h1>IlmCircle</h1>
+            <p class="tagline">Your Islamic Companion</p>
+        </header>
+        
+        <nav>
+            <a href="index.html" class="active">Support</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </nav>
+        
+        <div class="card">
+            <h2>📱 About IlmCircle</h2>
+            <p>IlmCircle is a comprehensive Islamic companion app designed to help Muslims with their daily religious practices. Our app provides accurate prayer times, Qibla direction, Quran with translations, Halal Product Verification, and an AI-powered Virtual Imam for Islamic Q&A.</p>
+            
+            <div class="features-grid">
+                <div class="feature-item"><span>🕌</span>Prayer Times</div>
+                <div class="feature-item"><span>🧭</span>Qibla Finder</div>
+                <div class="feature-item"><span>📖</span>Quran</div>
+                <div class="feature-item"><span>🔍</span>Halal Product Verification</div>
+                <div class="feature-item"><span>🤖</span>Virtual Imam</div>
+                <div class="feature-item"><span>💬</span>Q&A Forum</div>
+            </div>
+        </div>
+        
+        <div class="contact-box">
+            <h3>Need Help?</h3>
+            <a href="mailto:IlmCircle13@gmail.com">IlmCircle13@gmail.com</a>
+            <p class="response-time">We typically respond within 24-48 hours</p>
+        </div>
+        
+        <div class="card">
+            <h2>🛠 How to Get Support</h2>
+            <p>If you're experiencing issues with IlmCircle or have questions about the app, here's how to get help:</p>
+            <ul>
+                <li><strong>Email Support:</strong> Send us an email at <a href="mailto:IlmCircle13@gmail.com" style="color: #C9A227;">IlmCircle13@gmail.com</a> with a description of your issue.</li>
+                <li><strong>Include Details:</strong> Please include your device model, iOS version, and steps to reproduce the issue.</li>
+                <li><strong>Screenshots:</strong> If applicable, attach screenshots to help us understand the problem better.</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>📋 App Permissions</h2>
+            <p>IlmCircle requires certain permissions to provide its full functionality:</p>
+            <ul>
+                <li><strong>Location:</strong> Used to calculate accurate prayer times and Qibla direction based on your location.</li>
+                <li><strong>Camera:</strong> Used by Halal Product Verification to scan product barcodes.</li>
+                <li><strong>Notifications:</strong> Used to send prayer time reminders and Azhan notifications.</li>
+            </ul>
+            <p style="margin-top: 15px; color: #857861; font-size: 0.9rem;">All permissions are optional and can be managed in your device settings.</p>
+        </div>
+        
+        <footer>
+            <p>&copy; 2026 IlmCircle. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="privacy.html">Privacy Policy</a> · 
+                <a href="mailto:IlmCircle13@gmail.com">Contact Us</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
